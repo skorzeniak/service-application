@@ -270,6 +270,6 @@ def delete_customer(id):
     return redirect(url_for('dashboard'))
 
 
-if __name__ != '__main__':
+if __name__ == '__main__':
     app.secret_key='secure111'
     app.run(debug = True)
