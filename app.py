@@ -7,10 +7,10 @@ from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 #Config MySQL
 mysql = MySQL()
 app = Flask(__name__)
-app.config['MYSQL_DATABASE_USER'] = 'serviceAdmin'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'admin1!'
-app.config['MYSQL_DATABASE_DB'] = 'servicedb'
-app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+app.config['MYSQL_DATABASE_USER'] = 'sql7256641'
+app.config['MYSQL_DATABASE_PASSWORD'] = '1cHsphjRzm'
+app.config['MYSQL_DATABASE_DB'] = 'sql7256641'
+app.config['MYSQL_DATABASE_HOST'] = 'sql7.freesqldatabase.com'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 mysql.init_app(app)
 
