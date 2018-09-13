@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Customes Details</h1>
+  <a class="btn btn-success" href="/add_customer">Add customer</a>
+  <hr></hr>
+  <p> Click on ID of customer to show details </p>
+  <table class="table table-striped">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>PESEL</th>
+    <th></th>
+    <th></th>
+  </tr>
+    {% for customer in customers %}
+      <tr>
+        <td><a href="customer/{{customer[0]}}">{{customer[0]}}</a></td>
+        <td>{{customer[1]}}</td>
+        <td>{{customer[2]}}</td>
+        <td>{{customer[3]}}</td>
+
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
